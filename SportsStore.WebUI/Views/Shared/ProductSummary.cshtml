@@ -1,0 +1,18 @@
+﻿@model SportsStore.Domain.Entities.Product
+<div class="item">
+    @if (Model.ImageData != null)
+    {
+        <div class="ProductImage" >
+            <img alt="Product Image" width="75" height="75" src="@Url.Action("GetImage", "Product", new { Model.ProductId })" />
+        </div>
+    }
+    <h3>@Model.Name</h3>
+    @Model.Description
+    @using (Html.BeginForm("AddToCart", "Cart"))
+    {
+        @Html.HiddenFor(x => x.ProductId)
+        @Html.Hidden("returnUrl", Request.Url.PathAndQuery)
+        <input type="submit" value="+ Add to cart" />
+    }
+    <h4>@Model.Price.ToString("c")</h4>
+</div>
