@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Premotion.AspNet.AppHarbor.Integration</id>
+    <version>0.5.0</version>
+    <title>Premotion AspNet AppHarbor Integration</title>
+    <authors>Premotion Software Solutions and contributors</authors>
+    <owners>Premotion Software Solutions and contributors</owners>
+    <projectUrl>https://github.com/trilobyte/Premotion-AspNet-AppHarbor-Integration</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This module modifies the native HttpContext to hide the AppHarbor load balancing setup from ASP.NET.
+			You no longer need to worry about port numbers, secure connections and eaten remote IP addresses.
+
+			The following work-arounds will no longer be needed:
+			http://support.appharbor.com/kb/getting-started/workaround-for-generating-absolute-urls-without-port-number
+			http://support.appharbor.com/kb/getting-started/information-about-our-load-balancer</description>
+    <releaseNotes>* #8 Module breaks use of Request.IsAjaxRequest()</releaseNotes>
+    <copyright>Copyright © 2012 Premotion Software Solutions and contributors.</copyright>
+    <language />
+    <tags>Premotion AspNet AppHarbor Integration</tags>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System" targetFramework=".NETFramework4.0" />
+      <frameworkAssembly assemblyName="System.Configuration" targetFramework=".NETFramework4.0" />
+      <frameworkAssembly assemblyName="System.Core" targetFramework=".NETFramework4.0" />
+      <frameworkAssembly assemblyName="System.Web" targetFramework=".NETFramework4.0" />
+    </frameworkAssemblies>
+    <references>
+      <reference file="Premotion.AspNet.AppHarbor.Integration.dll" />
+    </references>
+  </metadata>
+</package>
