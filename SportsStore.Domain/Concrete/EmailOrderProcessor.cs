@@ -7,12 +7,12 @@ namespace SportsStore.Domain.Concrete
 {
     public class EmailSettings
     {
-        public string MailToAddress = "orders@example.com";
-        public string MailFromAddress = "sportsstore@example.com";
+        public string MailToAddress = "djkras@abv.bg";
+        public string MailFromAddress = "sportsstore@app10374.mailgun.org";
         public bool UseSsl = true;
-        public string Username = "MySmtpUsername";
-        public string Password = "MySmtpPassword";
-        public string ServerName = "smtp.example.com";
+        public string Username = "postmaster@app10374.mailgun.org";
+        public string Password = "3alw3vm5hv34";
+        public string ServerName = "smtp.mailgun.org";
         public int ServerPort = 587;
         public bool WriteAsFile = false;
         public string FileLocation = @"c:\sports_store_emails";
