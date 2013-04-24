@@ -7,7 +7,7 @@ namespace SportsStore.Domain.Concrete
 {
     public class EmailSettings
     {
-        public string MailToAddress = "djkras@abv.bg";
+        public string MailToAddress = "krasionlinestore@abv.bg";
         public string MailFromAddress = "sportsstore@app10374.mailgun.org";
         public bool UseSsl = true;
         public string Username = "postmaster@app10374.mailgun.org";
