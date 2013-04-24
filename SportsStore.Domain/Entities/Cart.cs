@@ -3,6 +3,7 @@ using System.Linq;
 using System;
 namespace SportsStore.Domain.Entities
 {
+
     [Serializable]
     public class CartLine
     {

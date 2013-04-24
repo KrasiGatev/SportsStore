@@ -10,6 +10,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6036CB3B-526D-4B6A-B409-16DAE441AA3F}"
 	ProjectSection(SolutionItems) = preProject
 		Local.testsettings = Local.testsettings
+		packages\RedisProviders.dll = packages\RedisProviders.dll
 		SportsStore.vsmdi = SportsStore.vsmdi
 		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
 	EndProjectSection
