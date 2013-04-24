@@ -7,6 +7,8 @@ using System.Web.Routing;
 using SportsStore.WebUI.Infrastructure;
 using SportsStore.WebUI.Binders;
 using SportsStore.Domain.Entities;
+using ServiceStack.Redis;
+using Harbour.RedisSessionStateStore;
 
 namespace SportsStore.WebUI
 {
@@ -47,14 +49,24 @@ namespace SportsStore.WebUI
             routes.MapRoute(null, "{controller}/{action}");
         }
 
+        //private IRedisClientsManager clientManager;
+
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
+
+            //this.clientManager = new PooledRedisClientManager("redis://:uyySwEAA5BAMwT1y7wqq@nidoking.ec2.myredis.com:9076");
+            //RedisSessionStateStoreProvider.SetClientManager(this.clientManager);
 
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
             ControllerBuilder.Current.SetControllerFactory(new NinjectControllerFactory());
             ModelBinders.Binders.Add(typeof(Cart), new CartModelBinder());
         }
+
+        //protected void Application_End()
+        //{
+            //this.clientManager.Dispose();
+        //}
     }
 }
