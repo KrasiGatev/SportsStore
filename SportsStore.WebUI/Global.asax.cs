@@ -7,8 +7,6 @@ using System.Web.Routing;
 using SportsStore.WebUI.Infrastructure;
 using SportsStore.WebUI.Binders;
 using SportsStore.Domain.Entities;
-using ServiceStack.Redis;
-using Harbour.RedisSessionStateStore;
 
 namespace SportsStore.WebUI
 {

@@ -1,13 +1,16 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System;
 namespace SportsStore.Domain.Entities
 {
+    [Serializable]
     public class CartLine
     {
         public Product Product { get; set; }
         public int Quantity { get; set; }
     }
 
+    [Serializable]
     public class Cart
     {
         private List<CartLine> lineCollection = new List<CartLine>();

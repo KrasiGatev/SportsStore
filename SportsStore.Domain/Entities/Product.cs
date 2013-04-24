@@ -7,6 +7,7 @@ using System.Web.Mvc;
 
 namespace SportsStore.Domain.Entities
 {
+    [Serializable]
     public partial class Product
     {
         [HiddenInput(DisplayValue = false)]
