@@ -7,12 +7,14 @@ using System.Web.Routing;
 using SportsStore.WebUI.Infrastructure;
 using SportsStore.WebUI.Binders;
 using SportsStore.Domain.Entities;
+using Quartz;
+using System.Net;
 
 namespace SportsStore.WebUI
 {
     // Note: For instructions on enabling IIS6 or IIS7 classic mode, 
     // visit http://go.microsoft.com/?LinkId=9394801
-
+    
     public class MvcApplication : System.Web.HttpApplication
     {
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
@@ -53,7 +55,7 @@ namespace SportsStore.WebUI
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
             ControllerBuilder.Current.SetControllerFactory(new NinjectControllerFactory());
-            ModelBinders.Binders.Add(typeof(Cart), new CartModelBinder());
+            ModelBinders.Binders.Add(typeof(Cart), new CartModelBinder()); 
         }
     }
 }
