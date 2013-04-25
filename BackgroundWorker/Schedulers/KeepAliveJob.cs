@@ -13,7 +13,7 @@ namespace BackgroundWorker.Schedulers
         {
             using (WebClient client = new WebClient())
             {
-                client.DownloadString("http://your_webapp.com");
+                client.DownloadString("http://simpleonlinestoreusingmvc.apphb.com/");
             }
         }
     }
